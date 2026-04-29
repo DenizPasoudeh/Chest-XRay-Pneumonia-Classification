@@ -23,22 +23,6 @@ The dataset contains chest X-ray images organized into two classes:
 
 The model is based on **MobileNetV2** pretrained on ImageNet.
 
-The architecture is:
-
-```text
-Input Chest X-Ray Image
-↓
-Data Augmentation
-↓
-MobileNetV2 Backbone
-↓
-Global Average Pooling
-↓
-Dropout
-↓
-Dense Layer with Sigmoid Activation
-```
-
 Since this is a binary classification task, the model outputs one probability value:
 
 ```text
