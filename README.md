@@ -19,36 +19,6 @@ The dataset contains chest X-ray images organized into two classes:
 - NORMAL
 - PNEUMONIA
 
-The original dataset structure is:
-
-```text
-chest_xray/
-├── train/
-│   ├── NORMAL/
-│   └── PNEUMONIA/
-├── val/
-│   ├── NORMAL/
-│   └── PNEUMONIA/
-└── test/
-    ├── NORMAL/
-    └── PNEUMONIA/
-```
-
-In this project, the original training set is split into training and validation subsets. The original test set is used only for final evaluation.
-
-## Methodology
-
-The main steps of the project are:
-
-1. Download the dataset directly inside Google Colab.
-2. Explore the dataset and visualize sample images.
-3. Resize all images to 224x224.
-4. Create training, validation, and test datasets.
-5. Apply simple data augmentation.
-6. Train a transfer learning model using MobileNetV2.
-7. Evaluate the model using classification metrics.
-8. Visualize the training process, confusion matrix, and prediction examples.
-
 ## Model Architecture
 
 The model is based on **MobileNetV2** pretrained on ImageNet.
@@ -117,21 +87,6 @@ The following examples show test images with their true labels, predicted labels
 
 ![Prediction Examples](assets/prediction_examples.png)
 
-## Project Structure
-
-```text
-Chest-XRay-Pneumonia-Classification/
-├── notebooks/
-│   └── Chest_XRay_Pneumonia_Classification.ipynb
-├── assets/
-│   ├── training_curves.png
-│   ├── confusion_matrix.png
-│   └── prediction_examples.png
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
 ## How to Run
 
 1. Clone this repository:
@@ -146,7 +101,7 @@ git clone https://github.com/DenizPasoudeh/Chest-XRay-Pneumonia-Classification.g
 notebooks/Chest_XRay_Pneumonia_Classification.ipynb
 ```
 
-3. Run the notebook in Google Colab.
+3. Run the notebook
 
 The dataset will be downloaded automatically inside the notebook.
 
@@ -167,6 +122,3 @@ Install the dependencies with:
 pip install -r requirements.txt
 ```
 
-## Disclaimer
-
-This project is for educational purposes only and should not be used as a medical diagnosis system.
